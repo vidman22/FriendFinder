@@ -14,7 +14,7 @@ var friends = [
 	"3",
 	"3"
 	]
-},
+  },
 ];
 
 module.exports = friends;

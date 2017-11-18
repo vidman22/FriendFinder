@@ -1,10 +1,10 @@
-var friends = require("../data/friends");
+var friends = require("../data/friends.js");
 
 module.exports = function(app) {
  
   app.get("/api/friends", function(req, res) {
     res.json(friends);
-    console.log(res);
+    console.log(friends);
   });
   
   app.post("/api/friends", function(req, res) {
@@ -37,7 +37,9 @@ module.exports = function(app) {
       }
     }
 
+    // Push user data into arry so that they aren't matched to themselves
     friends.push(userData);
+    console.log(userData);
 
     res.json(bestMatch);
   });

@@ -34,7 +34,7 @@
 		<hr>
 
 		<h3><strong>Question 1</strong></h3>
-		<h4>Your preferred method of exploring a new city is to get lost in it</h4>
+		<h4>Your preferred method of exploring a new city is to get lost in it.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q1">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -45,7 +45,7 @@
       	</select>
 
 		<h3><strong>Question 2</strong></h3>
-		<h4>You would rather build lego creations than discuss philosophy</h4>
+		<h4>You would rather build lego creations than discuss philosophy.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q2">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -57,7 +57,7 @@
 
 
 		<h3><strong>Question 3</strong></h3>
-		<h4>You make decisions based on what you're feelings rather than calculating all the options</h4>
+		<h4>You make decisions based on what you're feelings rather than calculating all the options.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q3">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -69,7 +69,7 @@
 
 
 		<h3><strong>Question 4</strong></h3>
-		<h4>You'd sooner ask "why" before "what"</h4>
+		<h4>You'd sooner ask "why" before "what".</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q4">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -81,7 +81,7 @@
 
 
 		<h3><strong>Question 5</strong></h3>
-		<h4>You get re-energized by spending a night indoors</h4>
+		<h4>You get re-energized by spending a night indoors.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q5">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -93,7 +93,7 @@
 
 
 		<h3><strong>Question 6</strong></h3>
-		<h4>Your inner creative person is more of an artist than an author</h4>
+		<h4>Your inner creative person is more of an artist than an author.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q6">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -116,7 +116,7 @@
       	</select>
 
 		<h3><strong>Question 8</strong></h3>
-		<h4>Family takes precedence over career</h4>
+		<h4>Family takes precedence over career.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q8">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -127,7 +127,7 @@
       	</select>
 
 		<h3><strong>Question 9</strong></h3>
-		<h4>Life is more fun when you go with the flow</h4>
+		<h4>Life is more fun when you go with the flow.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q9">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -138,7 +138,7 @@
       	</select>
 
 		<h3><strong>Question 10</strong></h3>
-		<h4>It is easy for you to spot the shortcomings of those around you</h4>
+		<h4>It is easy for you to spot the shortcomings of those around you.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q10">
 	 		<option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -202,6 +202,7 @@
 
     // Capture the form inputs 
     $("#submit").on("click", function(){
+    	alert("working");
 
     	// Form validation
     	function validateForm() {
@@ -226,7 +227,16 @@
 	    	var userData = {
 	    		name: $("#name").val(),
 	    		photo: $("#photo").val(),
-	    		scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
+	    		scores: [$("#q1").val(), 
+	    				 $("#q2").val(), 
+	    				 $("#q3").val(), 
+	    				 $("#q4").val(), 
+	    				 $("#q5").val(), 
+	    				 $("#q6").val(), 
+	    				 $("#q7").val(), 
+	    				 $("#q8").val(), 
+	    				 $("#q9").val(), 
+	    				 $("#q10").val(), ]
 	    	}
 
 
